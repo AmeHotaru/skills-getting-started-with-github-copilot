@@ -89,8 +89,8 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc;
-  margin: 0 0 0 18px;
+  list-style: none; /* hide bullets */
+  margin: 0;
   padding: 0;
 }
 
@@ -98,6 +98,23 @@ section h3 {
   font-size: 14px;
   color: #444;
   padding: 4px 0;
+}
+
+/* Unregister (delete) button next to participant */
+.unregister-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.unregister-btn:hover,
+.unregister-btn:focus {
+  background-color: rgba(198, 40, 40, 0.08);
+  outline: none;
 }
 
 /* Small muted message when no participants */
